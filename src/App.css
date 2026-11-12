@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+/* Diseño centrado con Flexbox */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+}
+
+/* Botones */
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-add {
+  background: #2563eb;
+  color: #fff;
+}
+.btn-add:hover {
+  background: #1d4ed8;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* Formulario */
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.task-form input[type='text'] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.task-form input[type='text']:focus {
+  border-color: #2563eb;
+}
+
+/* Filtros */
+.task-filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.btn-filter {
+  background: #e5e7eb;
+  color: #374151;
+}
+.btn-filter:hover {
+  background: #d1d5db;
+}
+.btn-filter.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Lista */
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #2563eb;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.task-item:hover {
+  background: #eff6ff;
+  transform: translateX(3px);
+}
+
+.task-item input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #16a34a;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+/* Tarea completada: verde y tachada */
+.task-item.completed {
+  border-left-color: #16a34a;
+}
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #16a34a;
+}
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  margin: 20px 0;
+}
+
+/* Contador */
+.task-stats {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
