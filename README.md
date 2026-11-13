@@ -8,15 +8,10 @@ cd mi-todo-app
 npm install
 ```
 
-Luego copia el contenido de la carpeta `src/` de este zip dentro de la carpeta
-`src/` de tu proyecto (reemplaza `App.jsx` y `main.jsx`, y agrega `App.css` y la
-carpeta `components/`). Puedes borrar `index.css` y `assets/` si no los usas.
-
-```bash
 npm run dev
 ```
 
-Abre la URL que muestra la terminal (normalmente http://localhost:5173).
+Abre la URL  http://localhost:5173
 
 ## Estructura
 
@@ -31,6 +26,7 @@ src/
     ├── TaskItem.jsx     # Checkbox, texto tachado, botón eliminar
     ├── TaskFilter.jsx   # Todas / Pendientes / Completadas
     └── TaskStats.jsx    # Contador de pendientes
-```
 
-Extra incluido: las tareas se guardan en `localStorage`.
+ 
+ 
+ las tareas se guardan en `localStorage`.
