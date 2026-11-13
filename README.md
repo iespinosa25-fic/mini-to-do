@@ -1,5 +1,4 @@
 
-
 ## Cómo usarlos
 
 ```bash
@@ -15,7 +14,7 @@ Abre la URL  http://localhost:5173
 
 ## Estructura
 
-```
+[```
 src/
 ├── App.jsx              # Estado: tasks y filter + addTask, toggleTask, deleteTask, filteredTasks
 ├── App.css              # Estilos
@@ -30,3 +29,4 @@ src/
  
  
  las tareas se guardan en `localStorage`.
+]
