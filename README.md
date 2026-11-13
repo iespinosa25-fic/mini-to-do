@@ -1,6 +1,4 @@
-# Mini To-Do App
 
-Archivos de `src/` para tu proyecto de Vite.
 
 ## Cómo usarlos
 
